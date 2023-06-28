@@ -16,6 +16,6 @@ def execute():
     return jsonify({'output': run_output.stdout if run_output.returncode == 0 else run_output.stderr})
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host="0.0.0.0", port=5001)
 
 
